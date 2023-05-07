@@ -4,6 +4,7 @@
             <div class="post">
                 <div class="data">
                     <p>opublikowany: {{ post.publish_date }}</p>
+                    <p>stowrzony: {{ post.created_date }}</p>
                 </div>
                 <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title}}</a></h2>
                 <em>{{ post.text|linebreaksbr }}</em>
